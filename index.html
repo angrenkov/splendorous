@@ -5,34 +5,28 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="wrapper">
-    <header>
+    <header class="header">
         <div class="header__logo">
             <p class="header__logo-template">Splendorous</p>
             <p class="header__logo-description">Free PSD Website Template</p>
         </div>
-        <div class="nav-toggle"></div>
-        <ul class="header__nav-ul">
-            <li class="header__nav-li">
-                <a href="" class="header__nav-li-a">Home</a></li>
-            <li class="header__nav-li">
-                <a href="" class="header__nav-li-a">Style Demo</a>
-            </li>
-            <li class="header__nav-li">
-                <a href="" class="header__nav-li-a">Full Width</a>
-            </li>
-            <li class="header__nav-li">
-                <a href="" class="header__nav-li-a">Dropdown</a>
-            </li>
-            <li class="header__nav-li">
-                <a href="" class="header__nav-li-a">Portfolio</a>
-            </li>
-            <li class="header__nav-li">
-                <a href="" class="header__nav-li-a">Gallery</a>
-            </li>
-        </ul>
+        <div class="tnav">
+            <div class="topnav" id="myTopnav">
+                <a href="">Home</a>
+                <a href="">Style Demo</a>
+                <a href="">Full Width</a>
+                <a href="">Dropdown</a>
+                <a href="">Portfolio</a>
+                <a href="">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
     </header>
     <div class="slider-wrapper-main">
         <div class="slider-wrapper slider_active">
@@ -156,7 +150,7 @@
         </section>
     </div>
     <div class="footer-wrapper">
-        <footer>
+        <footer class="footer">
             <div class="footer-tweets footer-section">
                 <h5 class="footer-title">Latest Tweets</h5>
                 <h6 class="footer-tweets__post-title">Post Title</h6>
@@ -215,5 +209,7 @@
         <p class="template-info__author">Template by OS Templates</p>
     </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
