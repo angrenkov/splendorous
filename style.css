@@ -109,7 +109,7 @@ body {
 }
 
 .slider__description {
-    width: 33.3%;
+    width: calc(100% / 3);
     margin: 0 9.89% 0 6.25%;
     position: absolute;
     top: 50%;
@@ -648,48 +648,107 @@ body {
     float: right;
 }
 
+@media (max-width: 936px) {
 
-@media screen and (max-width: 800px) {
+    .latest-work__pro-box {
+        min-width: 350px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
 
     .slider__img-container {
         left: auto;
-        right: 55px;
+        right: 27%;
+        top: 67%;
     }
 
     .header__logo {
         float: left;
-        width: 100%;
+        width: 200px;
         margin-top: 35px;
         position: absolute;
+    }
+
+    .latest-work, .latest-work__pro-box-img {
+        text-align: center;
+    }
+
+    .latest-work_pro-row1, .latest-work_pro-row2 {
+        text-align: center;
     }
 
     .latest-work__pro-box {
         min-width: 400px;
     }
 
-    .topnav a:not(:first-child) {display: none;}
+    .header__logo-template {
+        width: 200px;
+    }
+
+    .floated-block {
+        display: none;
+    }
     .topnav a.icon {
         float: right;
         display: block;
     }
 
+    .latest-work__pro-box {
+        margin: 50px calc(50% - 200px);
+    }
+
+    .footer-wrapper {
+        margin: 50px calc(50% - 256px);
+    }
+
+    .about {
+        margin: 50px calc(100% - 500px);
+        text-align: center;
+    }
+
+    .blog {
+        margin: 50px calc(50% - 250px);
+    }
+
+    .slider__description {
+        width: 85%;
+        word-break: initial;
+        top: 25%;
+    }
+
+    .slider__arrow {
+        top: 25%;
+    }
+
+    .slider {
+        padding-bottom: 300px;
+    }
+
 }
 
-@media screen and(max-width: 800px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+@media (max-width: 800px) {
+
+    .floated-block {
         position: absolute;
-        right: 0;
-        top: 0;
+        top: 120px;
+        z-index: 100;
+        background-color: white;
     }
-    .topnav.responsive a {
-        float: none;
+
+    .floated-block.responsive a:not(.icon) {
+        padding: 15px;
+    }
+
+    .floated-block.responsive {
+        float: right;
         display: block;
         text-align: left;
     }
 }
 
-@media screen and (min-width: 1001px) {
+@media (min-width: 1001px) {
 
     .wrapper {
         margin: 0 auto;
